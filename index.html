@@ -54,7 +54,16 @@
     <div class="bg-section">
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" title="Заказать услугу" class="btn">Заказать услугу</button>
+            <button data-modal-open type="button" title="Заказать услугу" class="btn">Заказать услугу</button>
+            <div data-modal class="backdrop backdrop.is-hidden">
+                <div class="modal">
+                    <button class="btn-close " title="Закрыть" data-modal-close>
+                        <svg class="close-icons-svg">
+                            <use href="./images/icons/close.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -87,9 +96,18 @@
         <h2 class="section-title centered">Чем мы занимаемся</h2>
 
         <ul class="list feature-list">
-            <li class="flex-work"><img src="./images/photo1.jpg" alt="Пример работы" width="370"></li>
-            <li class="flex-work"><img src="./images/photo2.jpg" alt="Пример работы" width="370"></li>
-            <li class="flex-work"><img src="./images/photo3.jpg" alt="Пример работы" width="370"></li>
+            <li class="flex-work title-work">
+                <img src="./images/photo1.jpg" alt="Пример работы" width="370">
+                <p>Десктопные приложения</p>
+            </li>
+            <li class="flex-work title-work">
+                <img src="./images/photo2.jpg" alt="Пример работы" width="370">
+                <p>Мобильные приложения</p>
+            </li>
+            <li class="flex-work title-work">
+                <img src="./images/photo3.jpg" alt="Пример работы" width="370">
+                <p>Дизайнерские ришения</p>
+            </li>
         </ul>
     </section>
 
@@ -308,5 +326,6 @@
             </div>
         </footer>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
